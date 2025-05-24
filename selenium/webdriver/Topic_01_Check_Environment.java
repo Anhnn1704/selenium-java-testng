@@ -6,6 +6,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
+import java.util.Random;
+
 public class Topic_01_Check_Environment {
     WebDriver driver;
 
@@ -29,5 +31,8 @@ public class Topic_01_Check_Environment {
         driver = new EdgeDriver();
         driver.get("https://www.facebook.com/");
         driver.quit();
+    }
+    public int getRandomNumber(){
+        return new Random().nextInt(9999);
     }
 }
