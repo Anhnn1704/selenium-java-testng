@@ -9,7 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_02_Selenium_Locator_Part_2 {
+public class Topic_02_Selenium_Relative_Locator_Part_2 {
 
     WebDriver driver;
 
