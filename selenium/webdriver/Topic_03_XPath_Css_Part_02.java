@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -55,9 +57,10 @@ public class Topic_03_XPath_Css_Part_02 {
         driver.findElement(By.id("query")).sendKeys("Kí họa");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         driver.findElement(By.xpath("//button[@title='Thêm vào giỏ hàng']/parent::*/preceding-sibling::a[@title='Kí Họa Venice']")).click();
+
     }
 
-    @AfterClass
+        @AfterClass
     public void cleanBrowser(){
         driver.quit();
     }
